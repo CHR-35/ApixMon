@@ -1,6 +1,6 @@
 # ApixMon
 
-**ApixMon** es una es una enciclopedia electrónica portátil de alta tecnología q para registrar y consultar información detallada sobre las distintas especies de Pokémon.
+**ApixMon** es una es una enciclopedia electrónica portátil de alta tecnología  para registrar y consultar información detallada sobre las distintas especies de Pokémon.
 
 
 ---
