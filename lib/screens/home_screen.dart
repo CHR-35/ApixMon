@@ -10,6 +10,29 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   bool _isInit = true;
 
+  final Map<String, String> tipoTraducciones = {
+    'normal': 'Normal',
+    'fighting': 'Lucha',
+    'flying': 'Volador',
+    'poison': 'Veneno',
+    'ground': 'Tierra',
+    'rock': 'Roca',
+    'bug': 'Bicho',
+    'ghost': 'Fantasma',
+    'steel': 'Acero',
+    'fire': 'Fuego',
+    'water': 'Agua',
+    'grass': 'Planta',
+    'electric': 'Eléctrico',
+    'psychic': 'Psíquico',
+    'ice': 'Hielo',
+    'dragon': 'Dragón',
+    'dark': 'Siniestro',
+    'fairy': 'Hada',
+    'unknown': 'Desconocido',
+    'shadow': 'Sombra',
+  };
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -133,7 +156,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           .map(
                             (t) => DropdownMenuItem(
                               value: t,
-                              child: Text(t.toUpperCase()),
+                              child: Text(
+                                (tipoTraducciones[t] ?? t).toUpperCase(),
+                              ),
                             ),
                           )
                           .toList(),
