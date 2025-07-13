@@ -32,7 +32,7 @@ class InfoScreen extends StatelessWidget {
           ),
           SizedBox(height: 20),
           DeveloperCard(
-            name: 'Jeremy Ferrer',
+            name: 'Geremmy Ferrer',
             role: 'Desarrollador de Apixmon',
             description:
                 'Creador de la lógica, estructura y experiencia visual. Amante del diseño elegante y las interfaces funcionales.',
