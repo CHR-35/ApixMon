@@ -1,16 +1,128 @@
-# apixmon
+# ApixMon
 
-A new Flutter project.
+**ApixMon** es una herramienta multiplataforma para el **monitoreo automático de APIs**, que combina código Dart con componentes nativos en C++ para ofrecer un monitoreo eficiente y configurable de endpoints REST.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Descripción
 
-A few resources to get you started if this is your first Flutter project:
+ApixMon permite supervisar la disponibilidad y rendimiento de APIs mediante chequeos periódicos, registro de tiempos de respuesta y códigos HTTP, y alertas configurables. Su arquitectura híbrida aprovecha Dart para la interfaz y lógica de alto nivel, y C++ para operaciones nativas optimizadas.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Características principales
+
+- Monitoreo continuo y configurable de múltiples endpoints.
+- Registro detallado de métricas de rendimiento.
+- Alertas personalizables (por ejemplo, vía email).
+- Arquitectura híbrida Dart + C++ para rendimiento y flexibilidad.
+- Uso de CMake para facilitar la compilación multiplataforma.
+- Fácil integración en proyectos Flutter o sistemas nativos.
+
+---
+
+## Tecnologías usadas
+
+- **Dart** para la lógica principal y posible interfaz.
+- **C++** para componentes nativos y optimizados.
+- **CMake** para la gestión del proceso de compilación.
+- Otros: Swift, C, HTML para soporte y documentación.
+
+---
+
+## Requisitos previos
+
+- Dart SDK (incluye Flutter si se usa UI Flutter)
+- Compilador C++ (gcc, clang o MSVC)
+- CMake (versión 3.10 o superior)
+- Git para clonar el repositorio
+
+---
+
+## Instalación
+
+1. Clona el repositorio:
+git clone https://github.com/CHR-35/ApixMon.git
+cd ApixMon
+
+
+2. Prepara el entorno:
+- Asegúrate de tener instalados Dart SDK y Flutter (si aplica).
+- Instala un compilador C++ compatible.
+- Instala CMake para gestionar la compilación.
+
+3. Compila el proyecto:
+mkdir build
+cd build
+cmake ..
+cmake --build .
+
+
+4. (Opcional) Para proyectos Dart/Flutter, instala dependencias:
+dart pub get
+
+o si usas Flutter:
+flutter pub get
+
+
+---
+
+## Configuración
+
+Edita el archivo `config.json` (o el archivo de configuración correspondiente) para definir los endpoints a monitorear y parámetros clave:
+
+{
+"endpoints": [
+"https://api.ejemplo.com/health",
+"https://api.otra.com/status"
+],
+"intervalo_segundos": 60,
+"alerta_email": "tuemail@ejemplo.com"
+}
+
+
+---
+
+## Uso
+
+- Ejecuta la aplicación o binario generado tras la compilación:
+./apixmon
+
+o si es un ejecutable Dart:
+dart run bin/apixmon.dart
+
+o si es Flutter:
+flutter run
+
+
+- Revisa los logs y reportes generados en la carpeta `logs/` o en la consola.
+
+---
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o pull request para sugerencias, mejoras o correcciones. Asegúrate de seguir las buenas prácticas de codificación y de documentar tus cambios.
+
+---
+
+## Licencia
+
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+## Contacto
+
+Para dudas o soporte, contacta a CHR-35 a través de GitHub.
+
+---
+
+## Recursos adicionales
+
+- [Documentación de Dart](https://dart.dev)
+- [Documentación de CMake](https://cmake.org/documentation/)
+- [Flutter (si aplica)](https://flutter.dev)
+
+---
+
+*Este README está diseñado para reflejar la estructura y tecnologías reales del proyecto ApixMon, facilitando la instalación, configuración y uso para desarrolladores familiarizados con Dart, C++ y CMake.*
