@@ -1,6 +1,6 @@
 # ApixMon
 
-**ApixMon** es una herramienta multiplataforma para el **monitoreo automático de pokemon**, que busca dar información detallada de diferentes tipos de pokemon.
+**ApixMon** es una es una enciclopedia electrónica portátil de alta tecnología q para registrar y consultar información detallada sobre las distintas especies de Pokémon.
 
 
 ---
