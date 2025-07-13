@@ -2,24 +2,11 @@
 
 **ApixMon** es una herramienta multiplataforma para el **monitoreo automático de APIs**, que combina código Dart con componentes nativos en C++ para ofrecer un monitoreo eficiente y configurable de endpoints REST.
 
----
-
-## Descripción
-
-ApixMon permite supervisar la disponibilidad y rendimiento de APIs mediante chequeos periódicos, registro de tiempos de respuesta y códigos HTTP, y alertas configurables. Su arquitectura híbrida aprovecha Dart para la interfaz y lógica de alto nivel, y C++ para operaciones nativas optimizadas.
 
 ---
 
-## Características principales
 
-- Monitoreo continuo y configurable de múltiples endpoints.
-- Registro detallado de métricas de rendimiento.
-- Alertas personalizables (por ejemplo, vía email).
-- Arquitectura híbrida Dart + C++ para rendimiento y flexibilidad.
-- Uso de CMake para facilitar la compilación multiplataforma.
-- Fácil integración en proyectos Flutter o sistemas nativos.
 
----
 
 ## Tecnologías usadas
 
@@ -67,21 +54,9 @@ flutter pub get
 
 ---
 
-## Configuración
-
-Edita el archivo `config.json` (o el archivo de configuración correspondiente) para definir los endpoints a monitorear y parámetros clave:
-
-{
-"endpoints": [
-"https://api.ejemplo.com/health",
-"https://api.otra.com/status"
-],
-"intervalo_segundos": 60,
-"alerta_email": "tuemail@ejemplo.com"
-}
 
 
----
+
 
 ## Uso
 
@@ -103,11 +78,7 @@ flutter run
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o pull request para sugerencias, mejoras o correcciones. Asegúrate de seguir las buenas prácticas de codificación y de documentar tus cambios.
 
----
 
-## Licencia
-
-Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
 ---
 
@@ -115,14 +86,5 @@ Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENS
 
 Para dudas o soporte, contacta a CHR-35 a través de GitHub.
 
----
 
-## Recursos adicionales
 
-- [Documentación de Dart](https://dart.dev)
-- [Documentación de CMake](https://cmake.org/documentation/)
-- [Flutter (si aplica)](https://flutter.dev)
-
----
-
-*Este README está diseñado para reflejar la estructura y tecnologías reales del proyecto ApixMon, facilitando la instalación, configuración y uso para desarrolladores familiarizados con Dart, C++ y CMake.*
