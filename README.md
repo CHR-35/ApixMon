@@ -1,6 +1,6 @@
 # ApixMon
 
-**ApixMon** es una herramienta multiplataforma para el **monitoreo automático de APIs**, que combina código Dart con componentes nativos en C++ para ofrecer un monitoreo eficiente y configurable de endpoints REST.
+**ApixMon** es una herramienta multiplataforma para el **monitoreo automático de pokemon**, que busca dar información detallada de diferentes tipos de pokemon.
 
 
 ---
@@ -63,10 +63,8 @@ flutter pub get
 - Ejecuta la aplicación o binario generado tras la compilación:
 ./apixmon
 
-o si es un ejecutable Dart:
-dart run bin/apixmon.dart
 
-o si es Flutter:
+Flutter:
 flutter run
 
 
@@ -84,7 +82,7 @@ Las contribuciones son bienvenidas. Por favor, abre un issue o pull request para
 
 ## Contacto
 
-Para dudas o soporte, contacta a CHR-35 a través de GitHub.
+Para dudas o soporte, contacta a CHR-35 y Geremmy09 a través de GitHub.
 
 
 
