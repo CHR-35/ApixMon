@@ -75,7 +75,7 @@ lib/
 
   [@CHR-35](https://www.github.com/CHR-35)
 
-- **Jeremy Ferrer**  
+- **Geremmy Ferrer**  
   _Encargado de diseño visual, experiencia de usuario y lógica de estructura_  
 
   [@Geremmy09](https://github.com/Geremmy09)
